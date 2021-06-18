@@ -1,7 +1,7 @@
 <?php
     $server="localhost";
-    $username="root";
-    $password="8965";
+    $username="";
+    $password="";
     $con=mysqli_connect($server,$username,$password);
     if(!$con){
         die("connection to this database failed due to". mysqli_connect_error());
@@ -10,11 +10,10 @@
     $scholar_no=$_POST['scholar_no'];
     $email_id=$_POST['email_id'];
     $address=$_POST['address'];
+
     $sql="INSERT INTO `student`.`reg` (`std_name`, `scholar_no`, `email_id`, `address`) VALUES ('$name', '$scholar_no', '$email_id', '$address')";
 
-    if($con->query($sql)==true){
-        // echo "Successfully Inserted";
-    }
+    if($con->query($sql)==true)
     else{
         echo "ERROR: $sql <br> $con->error";
     }
@@ -26,7 +25,6 @@
     <title>Student Registration</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container">
         <h1>Welcome to Student Registration Portal</h1>
@@ -39,5 +37,4 @@
         </form>
     </div>
 </body>
-
 </html>
