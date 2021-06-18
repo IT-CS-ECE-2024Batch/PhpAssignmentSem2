@@ -2,4 +2,5 @@ Change username+pass according
 to your localhost setup,
 test on your own;
 
-Add some CSS as formatting is still left
+Add some CSS as formatting is still left.
+
