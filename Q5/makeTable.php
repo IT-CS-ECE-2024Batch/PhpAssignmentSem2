@@ -8,16 +8,12 @@ table, th, td {
 </style>
 </head>
 <body>
-
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "8965";
+$username = "";
+$password = "";
 $dbname = "student";
-
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -32,12 +28,11 @@ if ($result->num_rows > 0) {
         echo "<tr><td>" . $row["id"]. "</td><td>" . $row["std_name"]. " " . "</td></tr>";
     }
     echo "</table>";
-} else {
+} 
+else {
     echo "0 results";
 }
-
 $conn->close();
 ?>
-
 </body>
 </html>
