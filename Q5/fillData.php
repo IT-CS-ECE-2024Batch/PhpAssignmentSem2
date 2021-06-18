@@ -12,21 +12,17 @@
     $address=$_POST['address'];
     $sql="INSERT INTO `student`.`reg` (`std_name`, `scholar_no`, `email_id`, `address`) VALUES ('$name', '$scholar_no', '$email_id', '$address')";
 
-    if($con->query($sql)==true){
-        // echo "Successfully Inserted";
-    }
+    if($con->query($sql)==true)
     else{
         echo "ERROR: $sql <br> $con->error";
     }
     $con->close();
 ?>
-
 <html>
 <head>
     <title>Student Registration</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container">
         <h1>Welcome to Student Registration Portal</h1>
@@ -39,5 +35,6 @@
         </form>
     </div>
 </body>
-
 </html>
+
+
