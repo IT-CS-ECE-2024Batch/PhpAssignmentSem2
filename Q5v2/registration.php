@@ -28,7 +28,7 @@ Number aleredy register Please try other</h3>";
  $insert=mysqli_query($connection,"insert into userrecord 
 (scholarnumber,name,mobile,email,address,semester,ipaddress,time, branch) 
 values('{$scholar}','{$name}','{$mobile}','{$email}','{$address}','{$semester}',
-'{$ip}','{$time}','{$branch}')");
+'{$ip}','{$time}','{$branch}');");
  if($insert){
  echo "<h1 style=\"color:green;\">Your registration is 
 successful your login id is {$email} and your password is your mobile 
