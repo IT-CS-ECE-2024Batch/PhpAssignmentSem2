@@ -1,15 +1,4 @@
 <?php
-
-
-
-//Celsius to Fahrenheit ° F = 9/5 ( ° C) + 32
-//Fahrenheit to Celsius ° C = 5/9 (° F - 32)
-//Celsius to Kelvin K = ° C + 273.15
-//Kelvin to Celsius ° C = K - 273.15
-//Fahrenheit to Kelvin K = 5/9 (° F - 32) + 273.15
-//Kelvin to Fahrenheit 	° F = 9/5 (K - 273.15) + 32
-
-
 //Fahrenheit to celsius
 function fahrenheit_to_celsius($given_value)
 {
